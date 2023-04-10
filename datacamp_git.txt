@@ -1,0 +1,62 @@
+git config -l -> to check who is signed in
+
+//connect git to github
+-----------------------
+git config --global user.name "Your Name"
+git config --global user.email "youremail@example.com"
+
+//disconnect git from github
+-----------------------------
+git config --global --unset user.name
+git config --global --unset user.email
+
+//general works
+----------------
+git init 					-> to add a local folder into git's tracking
+git remote add origin "links to github repo" 	-> connect a github repo to the folder on local machine
+
+git clone <url> 		-> to clone a remote repo to local machine
+
+git status 				-> shows modified files in a repository
+git diff <filename/folderName/nothing> 	-> shows changed made in a file/folder/all changes
+git add <. or filename(s)> 		-> to put all changed files  / mentioned folders into staging areas
+git commit -m "commit message" 		-> to save the changes into local git
+git push -u origin master		-> to upload file to remote repo(github)
+
+
+
+// to connect git to github we need ssh key
+ssh-keygen -t rsa -b 4096 -C "emailaddressOf git hub" -> for generating SSH key
+ls | grep <keyName> -> for finding out the generated SSH key
+cat key_name -> for seeing the key
+
+
+git push origin master -> to upload file to remote repo(github)
+
+git branch -> to list out all the brances
+git checkout -b <branch_name> -> to create a new branch
+git checkout <branch_name> -> for switching into a branch
+
+
+git push -u origin <new_branch_name_to_create_to_github_which is already created in local git>
+git push origin <branch_name>
+
+
+git pull origin master/branch name --> to update local repo to remote repo
+
+
+git branch -d <branch_name> -> to delete a branch from local git
+
+
+git merge <branch_name_from_which_merging_done>
+
+
+// 
+cd -> change directory
+mkdir -> make directory
+rmdir -> remove directory
+dir -> show directories
+<c/d/e/f>: -> jumps to c/d/e/f drive
+
+
+
