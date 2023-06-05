@@ -14,7 +14,7 @@ git config --global --unset user.email
 //general works
 ----------------
 git init 					-> to add a local folder into git's tracking
-git remote add origin "links to github repo" 	-> connect a github repo to the folder on local machine
+git remote add origin "links to github repo" 	-> connect a github repo with the folder on local machine
 
 git clone <url> 		-> to clone a remote repo to local machine
 
